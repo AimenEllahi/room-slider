@@ -9,13 +9,6 @@ export function Model(props) {
   const { nodes, materials } = useGLTF("/models/room.glb");
   return (
     <group {...props} dispose={null}>
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Plane.geometry}
-        material={materials["Material.002"]}
-        scale={34.88}
-      />
       <group
         position={[0.161, 0, -0.056]}
         rotation={[0, 0.695, 0]}

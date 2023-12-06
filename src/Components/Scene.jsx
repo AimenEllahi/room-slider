@@ -15,12 +15,12 @@ const Room = () => {
 export default function Scene() {
   return (
     <div>
-      <div className="fixed top-0 left-0 w-screen h-screen">
+      <div className='fixed top-0 left-0 w-screen h-screen'>
         <Canvas>
           <ambientLight intensity={1} />
           <Suspense fallback={<Loader />}>
-            <Environment preset="apartment" />
-            <Room />
+            <Environment preset='apartment' />
+            <Model />
           </Suspense>
           <OrbitControls />
         </Canvas>
