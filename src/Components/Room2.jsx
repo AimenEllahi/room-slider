@@ -3,7 +3,7 @@ import { useGLTF } from "@react-three/drei";
 import { useControls } from "leva";
 import { gsap } from "gsap";
 
-export function Model(props) {
+export default function Model(props) {
   const group = useRef();
   const { nodes, materials } = useGLTF("/models/room-transformed.glb");
   const [rotation, setRotation] = useState([0, 5, 0]);
