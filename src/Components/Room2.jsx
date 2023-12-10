@@ -26,6 +26,7 @@ function Model(props) {
       rotation={[0, -Math.PI / 2, 0]}
       {...props}
       dispose={null}
+      scale={[1.3, 1, 1.3]}
     >
       <group
         position={[0.161, 0, -0.056]}
